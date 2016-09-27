@@ -1,3 +1,5 @@
-# UUID                                  	Group Name
-#
-179329be8008e6913484699376b4164b4df97b4d	puppet/puppet-powerdns-distgit-ptl
+# UUID          Group Name
+False 	Non-Interactive Users
+9b04dfd0eb94e5a58e3e160716997428ccbe3531       	puppet/puppet-powerdns-distgit-core
+179329be8008e6913484699376b4164b4df97b4d        	puppet/puppet-powerdns-distgit-ptl
+global:Registered-Users		Registered Users
