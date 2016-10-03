@@ -1,5 +1,11 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+%define upstream_name puppet-powerdns
+%global commit 899651549b6d57470d233321265ace862270e154
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 Name:                   puppet-powerdns
 Version:                XXX
 Release:                XXX
@@ -8,7 +14,7 @@ License:                GPLv2
 
 URL:                    https://github.com/antonlindstrom/puppet-powerdns
 
-Source0:                https://github.com/antonlindstrom/puppet-powerdns/archive/%{version}.tar.gz
+Source0:                https://github.com/antonlindstrom/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:              noarch
 
