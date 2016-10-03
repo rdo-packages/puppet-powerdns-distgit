@@ -1,4 +1,4 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
 
 %define upstream_name puppet-powerdns
 %global commit 899651549b6d57470d233321265ace862270e154
@@ -7,8 +7,8 @@
 %global alphatag .%{shortcommit}git
 
 Name:                   puppet-powerdns
-Version:                XXX
-Release:                XXX
+Version:                0.0.5
+Release:                1%{?alphatag}%{?dist}
 Summary:                Module for managing PowerDNS
 License:                GPLv2
 
@@ -50,3 +50,5 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/powerdns/
 
 
 %changelog
+* Mon Oct  3 2016 Alfredo Moralejo <amoralej@redhat.com> - 0.0.5-1.8996515git
+- Newton update 0.0.5 (899651549b6d57470d233321265ace862270e154)
