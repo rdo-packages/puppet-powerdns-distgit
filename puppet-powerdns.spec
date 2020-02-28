@@ -1,14 +1,14 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
 
 %define upstream_name puppet-powerdns
-%global commit 899651549b6d57470d233321265ace862270e154
+%global commit d3d9b3afbefda3f0c01059ee0364f9d3fe411e75
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 Name:                   puppet-powerdns
-Version:                XXX
-Release:                XXX
+Version:                0.0.5
+Release:                2%{?alphatag}%{?dist}
 Summary:                Module for managing PowerDNS
 License:                GPLv2
 
@@ -50,4 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/powerdns/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 0.0.5-2.d3d9b3agit
+- Update to post 0.0.5 (d3d9b3afbefda3f0c01059ee0364f9d3fe411e75)
+
 
